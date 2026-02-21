@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f0f0f;
+    color:#f5f5f5;
+    line-height:1.6;
+}
+
+.container{
+    width:85%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    background:#111;
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#00f5a0;
+}
+
+nav a{
+    color:#aaa;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00f5a0;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero span{
+    color:#00f5a0;
+}
+
+.hero p{
+    color:#bbb;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#00f5a0;
+    color:#000;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#00c87c;
+}
+
+/* SECTION */
+
+.section{
+    padding:80px 0;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.dark{
+    background:#1a1a1a;
+}
+
+/* PROJECT CARDS */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#222;
+    padding:25px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:#2a2a2a;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skills span{
+    background:#222;
+    padding:10px 20px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.skills span:hover{
+    background:#00f5a0;
+    color:#000;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    padding:20px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    nav{
+        display:none;
+    }
+    .hero h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">YourName</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Hi, I'm <span>Your Name</span></h1>
+        <p>Full Stack Developer | AI Enthusiast | Problem Solver</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            I build scalable web applications and intelligent systems focused on performance,
+            clean architecture, and real-world impact.
+        </p>
+    </div>
+</section>
+
+<section id="projects" class="section dark">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>AI Web App</h3>
+                <p>Real-time analytics dashboard with ML integration.</p>
+            </div>
+            <div class="card">
+                <h3>Secure Platform</h3>
+                <p>Authentication-based full-stack system with dashboards.</p>
+            </div>
+            <div class="card">
+                <h3>Data Visualizer</h3>
+                <p>Interactive data visualization with optimized UI.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>AI/ML</span>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section dark">
+    <div class="container">
+        <h2>Contact</h2>
+        <p style="text-align:center;">Email: your@email.com</p>
+        <p style="text-align:center;">LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>
